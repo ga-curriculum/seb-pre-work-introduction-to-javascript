@@ -117,167 +117,200 @@ So how do we know which keyword to use to introduce variables? Let’s find out.
 
 ---
 
-<h1 class="slide-header">Declaring Variables</h1>
+<h1 class="slide-header">Declaring Variables with const</h1>
 
-<details>
-  <summary>`const`</summary>
-  When we use `const` (short for “constant”), we’re specifying that the data the variable contains is **not going to change**. For example:
+When we use `const` (short for “constant”), we’re specifying that the data the variable contains is **not going to change**. For example:
 
 ```js
 const myHometown = "Dakar, Senegal";
 ```
 
 The place where a person was born won’t change over time, so it’s reasonable to use `const` here.
-</details>
-
-<h1 class="slide-header">Video Content</h1>
-<!--
-  WISTIA EXAMPLE. REPLACE 11dit621rx with the id
--->
-<div class="wistia_embed wistia_async_11dit621rx wistia_embed_initialized" id="wistia-11dit621rx-1"
-  style="width: 100%; height: 50%;">
-  <div id="wistia_chrome_23" class="w-chrome notranslate" tabindex="-1">
-    <div id="wistia_grid_57_wrapper" style="display: block; width: 630px; height: 354.375px;">
-      <div id="wistia_grid_57_above" style="height: 0px; font-size: 0px; line-height: 0px;"> </div>
-      <div id="wistia_grid_57_main" style="width: 630px; left: 0px; height: 354.375px; margin-top: 0px;">
-        <div id="wistia_grid_57_center" style="width: 100%; height: 100%;">
-          <div class="w-video-wrapper w-css-reset"
-            style="height: 100%; position: absolute; top: 0px; width: 100%; opacity: 1;">
-            <video id="wistia_simple_video_135" crossorigin="anonymous"
-              poster="https://fast.wistia.com/assets/images/blank.gif" aria-label="Video" controlslist="nodownload"
-              playsinline="" preload="auto" type="video/m3u8" x-webkit-airplay="allow"
-              style="background: transparent; display: block; height: 100%; max-height: none; max-width: none; position: static; visibility: visible; width: 100%; object-fit: contain;"></video>
-          </div>
-          <div class="w-ui-container"
-            style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; opacity: 1;">
-            <div class="w-vulcan-v2 w-css-reset" id="w-vulcan-v2-56"
-              style="border-radius: 0px; box-sizing: border-box; cursor: default; direction: ltr; height: 100%; left: 0px; position: absolute; visibility: visible; top: 0px; width: 100%;">
-              <div class="w-vulcan--background w-css-reset"
-                style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;">
-                <div class="w-css-reset" data-handle="statusBar"></div>
-                <div class="w-css-reset" data-handle="backgroundFocus"><button
-                    aria-label="Play Video: A Brief History of the Web" class="w-css-reset w-vulcan-v2-button"
-                    tabindex="0" style="width: 0px; height: 0px; pointer-events: none;"></button></div>
-              </div>
-              <div aria-live="polite" class="w-vulcan--aria-live w-css-reset" aria-atomic="true"
-                style="position: absolute; left: -99999em;"></div>
-              <div class="w-vulcan-overlays-table w-css-reset"
-                style="display: table; pointer-events: none; position: absolute; width: 100%;">
-                <div class="w-vulcan-overlays--left w-css-reset"
-                  style="display: table-cell; vertical-align: top; position: relative; width: 0px;">
-                  <div class="w-css-reset" style="height: 321.375px;"></div>
-                </div>
-                <div class="w-vulcan-overlays--center w-css-reset"
-                  style="display: table-cell; vertical-align: top; position: relative; width: 100%;">
-                  <div class="w-css-reset" style="height: 321.375px;">
-                    <div class="w-css-reset" data-handle="bigPlayButton" style="pointer-events: auto;">
-                      <div class="w-bpb-wrapper w-css-reset w-css-reset-tree"
-                        style="border-radius: 0px; display: none; left: calc(50%); margin-left: -61.5234px; margin-top: -39.375px; overflow: hidden; position: absolute; top: calc(50% + 0px);">
-                        <button class="w-big-play-button w-css-reset-button-important w-vulcan-v2-button" tabindex="0"
-                          type="button" style="cursor: pointer; height: 78.75px; box-shadow: none; width: 123.047px;">
-                          <div
-                            style="background: rgb(1, 121, 145); display: block; left: 0px; height: 78.75px; mix-blend-mode: darken; position: absolute; top: 0px; width: 123.047px;">
-                          </div>
-                          <div
-                            style="background-color: rgba(1, 121, 145, 0.7); height: 78.75px; left: 0px; position: absolute; top: 0px; transition: background-color 150ms ease 0s; width: 123.047px;">
-                          </div><svg x="0px" y="0px" viewBox="0 0 125 80" enable-background="new 0 0 125 80"
-                            aria-hidden="true" alt=""
-                            style="fill: rgb(255, 255, 255); height: 78.75px; left: 0px; stroke-width: 0px; top: 0px; width: 100%; position: absolute;">
-                            <rect fill-rule="evenodd" clip-rule="evenodd" fill="none" width="125" height="80"></rect>
-                            <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="53,22 53,58 79,40">
-                            </polygon>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="w-css-reset" data-handle="clickForSoundButton" style="pointer-events: auto;">
-  <div class="w-css-reset w-css-reset-tree" data-handle="click-for-sound-backdrop"
-    style="display: none; height: 100%; left: 0px; pointer-events: auto; position: absolute; top: 0px; width: 100%;">
-    <button aria-label="Click for sound" class="w-vulcan-v2-button click-for-sound-btn"
-      style="background: rgba(0, 0, 0, 0.8); border: 2px solid transparent; border-radius: 60px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; outline: none; pointer-events: auto; position: absolute; right: 20.1484px; top: 20.1484px; max-width: 589.703px;">
-      <div
-        style="display: flex; align-items: center; justify-content: flex-end; white-space: nowrap; overflow: hidden; max-width: 0px; transition: max-width 200ms ease 0s;">
-        <span
-          style="color: rgb(255, 255, 255); font-family: WistiaPlayerInter, Helvetica, sans-serif; font-size: 15px; font-weight: 500; padding-left: 1em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 630px;">Click
-          for sound</span>
-      </div><svg viewBox="0 0 237 237" width="51.6796875" height="51.6796875"></svg>
-    </button>
-</div>
-</div>
-</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- YOUTUBE -->
-<!-- VIMEO -->
-<details>
-  <summary>Transcript</summary>
-  
-  <p class="transcript-text">
-    Lorem ipsum etc etc
-  </p>
-</details>
 
 ---
 
+<h1 class="slide-header">Declaring Variables with let</h1>
 
-<h1 class="slide-header">Code Challenge</h1>
+Defining a variable with `let` looks like this:
 
-<iframe height="500" style="width: 100%;" scrolling="no" title="Code Challenge Test" src="https://codepen.io/Ryan-Brodsky/embed/VwNwXqq?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-    See the Pen <a href="https://codepen.io/Ryan-Brodsky/pen/VwNwXqq">
-    Code Challenge Test</a> by Ryan Brodsky (<a href="https://codepen.io/Ryan-Brodsky">@Ryan-Brodsky</a>)
-    on <a href="https://codepen.io">CodePen</a>.
-  </iframe>
+```js
+let pointsScored = 30;
+```
+
+When you define a variable with `let`, you can change the value of that variable throughout the course of the program. The points scored in a computer game, for example, will go up or down all the time during the game, so we’ll want to allow that variable to change by using `let`.
 
 ---
 
-<h1 class="slide-header">Multiple Choice Question</h1>
+<h1 class="slide-header">Declaring Variables with var</h1>
 
-<fieldset>
-  <legend>Please select one of the following</legend>
-  <input type="radio" name="action" id="track" value="track" correct="true"/><label for="track">Correct Answer</label><br />
-  <input type="radio" name="action" id="event" value="event"  /><label for="event">Incorrect</label><br />
-  <input type="radio" name="action" id="message" value="message" /><label for="message">Incorrect</label><br />
-</fieldset>
-<button class="ant-btn ant-btn-primary multiple-choice-radio-submit">Submit Answer</button>
+The oldest way of declaring a variable in JavaScript is to use `var`, which simply stands for “variable.” A variable defined with `var` can be changed. It’s written like this:
+
+```js
+var myJob = "fortune cookie writer";
+```
+
+`var` is not commonly used anymore, but you may see examples online, so it’s important to know what it is. We'll be concentrating on `let` and `const`, as they’re the most widely used.
+
+---
+
+<h1 class="slide-header">Functions</h1>
+
+When we run a computer program, we’re expecting it to perform some work for us. It’s not there just to give us a headache (although programs often do). 
+
+How do we do the work? **Functions** are the verbs of JavaScript. They tell the program what to do, whether that’s adding numbers, computing random values, or combining sentences.
+
+One function we’ll use is `console.log()`. It writes a message to the **console**, which is a behind-the-scenes view into what’s happening in your computer’s brain. 
+
+Here’s how it’s written:
+
+```js
+const myName = "Lisa Simpson";
+console.log(myName);
+```
+
+In the console, we’d see `"Lisa Simpson"` appear, because this is the data stored in the `myName` variable.
+
+---
+
+<h1 class="slide-header">Creating Variables</h1>
+
+Ready to write some variables in JavaScript?
+
+In the JavaScript section of the provided code editor, add the following three variables. You can replace the data with information about your favorite fictional character. Make sure to add the code in a similar format to how it appears below — even just a missing `"` will break it!
+
+![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/LisaSimpsonCodePen.png)
+
+Then, add a `console.log()` to check your work (you should see something appear in the console):
+
+```js
+console.log(myName, myAge, myHometown);
+```
+
+---
+
+<h1 class="slide-header">Data Types</h1>
+
+JavaScript variables can hold many different types of data. **Data types** are important because they tell the computer how the programmer wants to use the data.
+
+In other words, data types specify what type of values we’re adding after `=` when we define variables. For example, `myName` and `myAge` are defined as different data types here:
+
+![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/LisaSimpsonCodePen.png)
+
+Next, let’s look at three of the most basic data types:
+* Numbers
+* Booleans
+* Strings
+
+---
+
+<h1 class="slide-header">Numbers and Booleans</h1>
+
+**Numbers** in JavaScript are exactly that - numbers. Unlike other programming languages, which treat whole numbers and decimals differently, all numbers work the same way in JavaScript. Here’s how they’re written:
+```js
+let age = 30;
+const pi = 3.14159265359;
+```
+Easy as pi(e)!
+
+Another basic data type is a **Boolean**, which is a true or false value. It’s written in JavaScript like this:
+
+```js
+let booleansAreUseful = true;
+let weDontNeedBooleans = false;
+```
+
+---
+
+<h1 class="slide-header">Strings</h1>
+
+A **string** in JavaScript is any combination of letters, numbers, or other characters you’d store in a variable. For example:
+```js
+let message = "don't have a cow, man";
+let myKey = "ahxhb8321";
+```
+
+A string can have one letter, word, or number or multiple letters, words, or numbers — it’s all the same. The most important thing to remember is to add **quotation marks** around your string. This tells your program that the data is a string, not the name of a variable or a Boolean.
+
+**Note**: You can use either single quotation marks (‘like this’) or double quotation marks (“like this”) for strings; JavaScript reads them the same way. The usage varies, so the rule of thumb is to pick one type and stick with your decision. We’ll use double quotation marks in these lessons.
+
+---
+
+<h1 class="slide-header">Knowledge Check</h1>
+
+Choose the correct ways in which each type of variable would be written in JavaScript (using standard conventions):
+* **String**: Lisa Simpson has a pet cat named Snowball.
+* **Boolean**: It’s true that she has yellow hair.
+* **Number**: She is 36-inches tall.
+
+Watch out for bad variable names or bad punctuation: details matter!
 
 <fieldset>
   <legend>Please select all that apply</legend>
-  <input type="checkbox" id="uniqueAnswer" name="unique" correct="true"/><label for="uniqueAnswer">Correct Answer</label><br />
-  <input type="checkbox" id="uniqueAnswer2" name="unique2" /><label for="uniqueAnswer2">Incorrect Answer</label><br />
-  <input type="checkbox" id="uniqueAnswer3" name="unique3" correct="true"/><label for="uniqueAnswer3">Correct Answer</label><br />
+  <input type="checkbox" id="uniqueAnswer" name="unique" /><label for="uniqueAnswer">const mypet = "Snowball";</label><br />
+  <input type="checkbox" id="uniqueAnswer2" name="unique2" /><label for="uniqueAnswer2">let hasYellowHair = "true"</label><br />
+  <input type="checkbox" id="uniqueAnswer3" name="unique3" correct="true"/><label for="uniqueAnswer3">let height = 36;</label><br />
+  <input type="checkbox" id="uniqueAnswer4" name="unique4" correct="true"/><label for="uniqueAnswer4">const myPet = "Snowball";</label><br />
+  <input type="checkbox" id="uniqueAnswer5" name="unique5" /><label for="uniqueAnswer5">myHeight = 36</label><br />
+  <input type="checkbox" id="uniqueAnswer6" name="unique6" correct="true"/><label for="uniqueAnswer6">let hasYellowHair = true;</label><br />
 </fieldset>
 
 <button class="ant-btn ant-btn-primary multiple-choice-checkbox-submit">Submit Answer</button>
 
 ---
 
-<h1 class="slide-header">Cards Slide</h1>
-
-<details>
-  <summary>Vocabulary Term</summary>
+<h1 class="slide-header">String Concatenation</h1>
   
-  <p class="transcript-text">
-    Definition when "flipped" by the student
-  </p>
-</details>
+  Time to add a new word to your vocabulary: **concatenation**. It may sound fancy, but it just means combining stuff. Here, we’ll use concatenation to combine strings in JavaScript. 
 
-<details>
-  <summary>Vocabulary Term</summary>
-  
-  <p class="transcript-text">
-    Definition when "flipped" by the student
-  </p>
-</details>
+For example, what if we wanted to combine these two variables into one string:
+```js
+const firstName = "Lisa";
+const lastName = "Simpson";
+```
+
+We can easily do this by using a `+` sign, like so:
+```js
+console.log(firstName + " " + lastName);
+```
+
+Notice how, between the variables, we added two quotation marks with a space. JavaScript is smart, but not smart enough to know that there should be a space between the variables to make it grammatically correct. You have to add it in yourself.
+
+---
+
+<h1 class="slide-header">Concatenation Challenge</h1>
+
+Let’s practice concatenating strings. In the JS tab, we’ve already declared three variables: `myName`, `myAge`, and `myHometown`.
+
+Can you concatenate them to create the sentence below? Use a `console.log()` to display this message in the console:
+
+`"My name is Lisa Simpson and I am 8 years old."`
+
+**Hint**: Instead of adding spaces with empty quotation marks, think about how you might add them to the beginning or end of other strings.
+
+---
+
+<h1 class="slide-header">Adding Numbers</h1>
+
+One plus one is...? We’ve defined a variable named `number` with a value equal to `1`. Research as many ways as you can for adding `1` to the `number` variable so that its value will now equal `2`.
+
+Then, `console.log()` the phrase `"1 + 1 is 2"` by including the updated value of the `one` variable in the log statement.
+
+---
+
+<h1 class="slide-header">Typeof</h1>
+
+Data types can cause unexpected issues in JavaScript and should be on your list of things to check when debugging. 
+
+Use the `typeof` operator to investigate and log the type of each of the given variables.
+
+Understanding documentation is a vital skill when programming, so read about how to use `typeof` in Mozilla Developer Network’s [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof). 
 
 ---
 
 <h1 class="slide-header">Conclusion</h1>
+
+It may not seem like JavaScript is doing much yet, but we've laid the foundation for writing JavaScript by learning about using variables and data types. 
+
+You've also learned about the **conventions** of writing JavaScript, such as using `camelCase` and semicolons: this helps ensure JavaScript programmers can all work together using a common style. By sticking with these conventions, you're well on your way to joining the community of JS developers yourself!
 
 </textarea>
