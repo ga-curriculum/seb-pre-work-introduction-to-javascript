@@ -1,28 +1,28 @@
 <textarea id="source">
 
-<h1 class="slide-header">Title</h1>
+<h1 class="slide-header">Introduction to JavaScript</h1>
 
-<span id=time-estimate class="color-grey-500">20 mins</span>
+<span id=time-estimate class="color-grey-500">30 mins</span>
 
 <p id="lesson-description">
-  In this lesson you'll learn blah blah blah
+  Along with HTML and CSS, JavaScript powers the web as we know it. You’ve been using it for years, maybe without even realizing it. Your bank’s website, search engines, social media sites, certain mobile apps — they all use JavaScript to power engaging interactions, enhance the user experience, and create intuitive interfaces. In this lesson, you’ll learn about the role JavaScript plays in modern web applications.
 </p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
 
-Topic # 1
+JavaScript and the Modern Internet
 
 <hr>
 
-Topic #2
+JavaScript Syntax
 
 <hr>
 
-Topic #3
+JavaScript Data Types
 
 <hr>
 
-<a href="https://ga-waite.s3.amazonaws.com/production/sanitized-pdfs/introduction-to-html-2.pdf" target="_blank" download="introduction_to_html_study_guide.pdf" class="ant-btn" data-trackable="true" data-track-category="study guide" data-track-section="lesson page" data-track-action="download study guide"><span role="img" class="anticon"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><g class="download_svg__nc-icon-wrapper"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"></path><path data-color="color-2" d="M1 14h14v2H1z"></path></g></svg></span><span> Download Study Guide</span></a>
+<a href="https://ga-create-api.s3.amazonaws.com/studyguides/introduction-to-javascript-1b28e9.pdf" target="_blank" download="introduction_to_javascript_study_guide.pdf" class="ant-btn" data-trackable="true" data-track-category="study guide" data-track-section="lesson page" data-track-action="download study guide"><span role="img" class="anticon"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><g class="download_svg__nc-icon-wrapper"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"></path><path data-color="color-2" d="M1 14h14v2H1z"></path></g></svg></span><span> Download Study Guide</span></a>
 
 ---
 
@@ -31,12 +31,104 @@ Topic #3
 <p>By the end of this lesson, you'll be able to:</p>
 
 <ul>
-  <li>Objective 1</li>
-  <li>Objective 2</li>
-  <li>Objective 3</li>
+  <li>Identify how and why JavaScript is used in modern web development.</li>
+  <li>Write variables with correct JavaScript syntax.</li>
+  <li>Combine strings of data using concatenation.</li>
 </ul>
 
 ---
+
+<h1 class="slide-header">Meet Javascript</h1>
+
+JavaScript (JS) is a programming language used to create rich experiences on most websites and other moving pieces of technology. In fact, this whole site is powered by JavaScript.
+
+JavaScript was created by Brendan Eich in 1995 and has been a fundamental building block of the web ever since. It has continued to evolve and is supported across all mainstream browsers. 
+
+**Note**: Just as “fire” is different from “firefly,” Java is **not** JavaScript. Java is a back-end programming language, while JavaScript is mostly used on the front-end.
+
+![link text](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/JSprettytree.gif)
+
+_This pretty animation is powered by JavaScript. You can read about how it was put together over at_ <a href="https://hackernoon.com/javascript-promises-for-animation-sequences-e31873493d49" target="_blank" rel="noreferrer noopener">_Hacker Noon_<a>.
+
+---
+
+<h1 class="slide-header">HTML + CSS + JavaScript = Front-End Magic</h1>
+
+The web was originally a text-only format. As it evolved, JavaScript arose to fulfill a need that HTML, CSS, and back-end languages like Java or C++ simply could not meet.
+
+One of JavaScript’s primary purposes is to enable more sophisticated interaction between users and browsers. JavaScript can respond to user input without needing to communicate with a back-end server, making it flexible and fast.
+
+HTML, CSS, and JavaScript all have parts to play in the symphony that is a website. Think of them as the three best friends of the web. Front-end development — that is, the parts of a website you can actually see — relies on these best friends to create the rich medium we use every day.
+
+![](https://ga-instruction.s3.amazonaws.com/assets/intro-tech/js-unit-assets/three-amigos.png)
+
+---
+
+<h1 class="slide-header">JavaScript Syntax</h1>
+
+Before we can talk to our computer in JavaScript, we need to learn its syntax. JavaScript has several distinct features:
+* Capitalization
+* Punctuation
+* Nouns (Variables)
+* Verbs (Functions)
+
+Let’s find out more about these features.
+
+---
+
+<h1 class="slide-header">Capitalization in JavaScript</h1>
+
+One of the more important things about JavaScript is that it’s **case sensitive**. Just as “mark” and “Mark” can mean different things in English, `myfirstname` and `myFirstName` are read differently by JavaScript.
+
+Notice anything interesting about how we wrote `myFirstName`? This format is called **camel case,** and it’s the preferred method for writing multiple words in JavaScript. The first word starts with a lowercase letter, while all the following words start with an uppercase letter.
+
+![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/Lesson%201/CamelCase.png)
+
+---
+
+<h1 class="slide-header">Punctuation in JavaScript</h1>
+
+Punctuation counts in JavaScript. We end most lines of JavaScript with a **semicolon,** like this:
+
+```js
+const myName = "Lisa Simpson";
+console.log("Hello ", myName);
+```
+
+However, like all languages, JavaScript is evolving. In earlier versions, it was standard for JavaScript statements to  _always_ end with a semicolon. Newer iterations of the language don’t always require semicolons, but there are different style guides governing their use.
+
+---
+
+<h1 class="slide-header">Variables</h1>
+
+We use variables in JavaScript like we use nouns in English. **Variables** hold values. For example, `myName` and `myAge` are variables, and they hold the values “Lisa Simpson” and 8, respectively.
+
+```js
+const myName = "Lisa Simpson";
+let myAge = 8;
+```
+
+There are three important parts of a variable:
+* Start with the **introductory keyword**, which can be `const` or `let`. This lets JavaScript know that a variable comes after the keyword.
+* The **variable’s name** is written in camel case.
+* The **value**, which comes after `=`, determines what the variable represents. Think of it as the definition of a noun.
+
+So how do we know which keyword to use to introduce variables? Let’s find out.
+
+---
+
+<h1 class="slide-header">Declaring Variables</h1>
+
+<details>
+  <summary>`const`</summary>
+  When we use `const` (short for “constant”), we’re specifying that the data the variable contains is **not going to change**. For example:
+
+```js
+const myHometown = "Dakar, Senegal";
+```
+
+The place where a person was born won’t change over time, so it’s reasonable to use `const` here.
+</details>
 
 <h1 class="slide-header">Video Content</h1>
 <!--
