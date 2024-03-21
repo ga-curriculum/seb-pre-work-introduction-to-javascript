@@ -287,7 +287,7 @@ Notice how, between the variables, we added two quotation marks with a space. Ja
 
 Let’s practice concatenating strings. In the JS tab, we’ve already declared three variables: `myName`, `myAge`, and `myHometown`.
 
-Can you concatenate them to create the sentence below? Use a `console.log()` to display this message in the console:
+Can you concatenate them to create the sentence below? Create a new variable named `message` that stores the following text:
 
 `"My name is Lisa Simpson and I am 8 years old."`
 
