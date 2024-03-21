@@ -186,6 +186,12 @@ Then, add a `console.log()` to check your work (you should see something appear 
 console.log(myName, myAge, myHometown);
 ```
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="First Variables" src="https://codepen.io/GAmarketing/embed/YzMpJJe?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/YzMpJJe">
+  First Variables</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
 ---
 
 <h1 class="slide-header">Data Types</h1>
@@ -287,6 +293,12 @@ Can you concatenate them to create the sentence below? Use a `console.log()` to 
 
 **Hint**: Instead of adding spaces with empty quotation marks, think about how you might add them to the beginning or end of other strings.
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="String Concatenation" src="https://codepen.io/GAmarketing/embed/gOyLBBd?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/gOyLBBd">
+  String Concatenation</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
 ---
 
 <h1 class="slide-header">Adding Numbers</h1>
@@ -295,15 +307,27 @@ One plus one is...? We’ve defined a variable named `number` with a value equal
 
 Then, `console.log()` the phrase `"1 + 1 is 2"` by including the updated value of the `one` variable in the log statement.
 
+<iframe height="300" style="width: 100%;" scrolling="no" title="Adding to Numbers" src="https://codepen.io/GAmarketing/embed/BaEQqqv?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/BaEQqqv">
+  Adding to Numbers</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
 ---
 
 <h1 class="slide-header">Typeof</h1>
 
 Data types can cause unexpected issues in JavaScript and should be on your list of things to check when debugging. 
 
-Use the `typeof` operator to investigate and log the type of each of the given variables.
+Use the `typeof` operator to create new variables to store the type of each of the given variables.
 
 Understanding documentation is a vital skill when programming, so read about how to use `typeof` in Mozilla Developer Network’s [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof). 
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="typeof" src="https://codepen.io/GAmarketing/embed/NWmbOOm?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/GAmarketing/pen/NWmbOOm">
+  typeof</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ---
 
