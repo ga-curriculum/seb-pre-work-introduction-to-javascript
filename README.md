@@ -113,8 +113,6 @@ Notice anything interesting about how we wrote `myFirstName`? This format is cal
 
 <h1 class="slide-header">Punctuation in JavaScript</h1>
 
-# Punctuation in JavaScript
-
 Punctuation is important in JavaScript, and one of the most common punctuation marks you'll see is the **semicolon `;`**. In JavaScript, semicolons are used to mark the end of a statement, like this:
 
 ```js
@@ -196,8 +194,6 @@ In this course, we’ll focus on **`let` and `const`**, as they are the recommen
 
 <h1 class="slide-header">Functions</h1>
 
-# Functions
-
 When we run a computer program, we expect it to **perform tasks for us**—whether that’s displaying information, calculating values, or responding to user input.
 
 In JavaScript, we use **functions** to tell the program what to do. You can think of functions as **the verbs of JavaScript**—they represent actions that the program can take, such as:
@@ -233,7 +229,7 @@ Understanding how to use `console.log()` is **an essential skill for debugging**
 
 Ready to write some variables in JavaScript?
 
-In the JavaScript section of the provided code editor, add the following three variables. You can replace the data with information about your favorite fictional character. Make sure to add the code in a similar format to how it appears below — even just a missing `"` will break it!
+In the JavaScript section of CodePen, add the following three variables. You can replace the data with information about your favorite fictional character. Make sure to add the code in a similar format to how it appears below — even just a missing a `"` will break it!
 
 <img src="./assets/LisaSimpsonCodePen.png" alt="Code Pen Example" style="width:500px;"/>
 
@@ -276,8 +272,6 @@ let age = 30;
 const pi = 3.14159265359;
 ```
 
-Easy as pi(e)!
-
 Another basic data type is a **Boolean**, which is a true or false value. It’s written in JavaScript like this:
 
 ```js
@@ -292,25 +286,25 @@ let weDontNeedBooleans = false;
 A **string** in JavaScript is any combination of letters, numbers, or other characters you’d store in a variable. For example:
 
 ```js
-let message = "don't have a cow, man";
-let myKey = 'ahxhb8321';
+let message = 'hello world';
+let myKey = 'a5h2x7h0b83f2k1';
 ```
 
 A string can have one letter, word, or number or multiple letters, words, or numbers — it’s all the same. The most important thing to remember is to add **quotation marks** around your string. This tells your program that the data is a string, not the name of a variable or a Boolean.
 
-**Note**: You can use either single quotation marks (‘like this’) or double quotation marks (“like this”) for strings; JavaScript reads them the same way. The usage varies, so the rule of thumb is to pick one type and stick with your decision. We’ll use double quotation marks in these lessons.
+**Note**: You can use either single quotation marks `'` ('like this') or double quotation marks `"` ("like this") for strings; JavaScript reads them the same way. The usage varies, so the best practice is to pick one type and stick with your decision. We’ll use double quotation marks in these lessons.
 
 ---
 
 <h1 class="slide-header">Knowledge Check</h1>
 
-Choose the correct ways in which each type of variable would be written in JavaScript (using standard conventions):
+Below are three pieces of information. Your task is to identify the **correctly written JavaScript variables** that follow standard conventions.
 
-- **String**: Lisa Simpson has a pet cat named Snowball.
-- **Boolean**: It’s true that she has yellow hair.
-- **Number**: She is 36-inches tall.
+- **String:** Lisa Simpson has a pet cat named Snowball.
+- **Boolean:** It’s true that she has yellow hair.
+- **Number:** She is 36 inches tall.
 
-Watch out for bad variable names or bad punctuation: details matter!
+Select all the options that correctly follow JavaScript naming conventions and data type rules.
 
 <fieldset>
   <legend>Please select all that apply</legend>
